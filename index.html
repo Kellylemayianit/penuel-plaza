@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penuel Plaza Hotel - Amboseli's Finest | Direct Booking</title>
+    <meta name="description" content="Experience luxury at Penuel Plaza Hotel in Amboseli with stunning Mount Kilimanjaro views. Book direct and save 15%. Game drives, spa, and authentic African hospitality.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>PENUEL PLAZA HOTEL</h1>
+                    <p class="tagline">Amboseli's Finest Retreat</p>
+                </div>
+                <nav class="desktop-nav">
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact" class="contact-btn">Contact</a>
+                    <a href="tel:+254123456789" class="phone-btn">
+                        <i class="fas fa-phone"></i> +254 123 456 789
+                    </a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu" id="closeMenu">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="tel:+254123456789">
+                <i class="fas fa-phone"></i> Call Us
+            </a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+                        <div class="hero-video-bg">
+            <img src="images/twiga.jpg" alt="Penuel Plaza Hotel with Mount Kilimanjaro" class="hero-image">
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="save-badge">
+                        <i class="fas fa-tag"></i> Book Direct & Save 15%
+                    </div>
+                    <h1 class="main-headline">
+                        Amboseli's Finest:<br>
+                        <span class="gradient-text">Where Kilimanjaro Meets Luxury</span>
+                    </h1>
+                    <p class="hero-subtext">Experience authentic African hospitality with breathtaking mountain views, thrilling game drives, and world-class amenities</p>
+                    
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <i class="fas fa-star"></i>
+                            <span>4.8/5 Rating</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Best Rate Guarantee</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-users"></i>
+                            <span id="viewingCount">8</span> viewing now
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="booking-form-card">
+                    <div class="form-header">
+                        <h3>Check Availability</h3>
+                        <div class="urgency-badge">
+                            <i class="fas fa-fire"></i> Only <span id="roomsLeft">5</span> rooms left
+                        </div>
+                    </div>
+                    
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkIn">
+                                    <i class="fas fa-calendar"></i> Check-in
+                                </label>
+                                <input type="date" id="checkIn" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkOut">
+                                    <i class="fas fa-calendar"></i> Check-out
+                                </label>
+                                <input type="date" id="checkOut" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">
+                                <i class="fas fa-users"></i> Guests
+                            </label>
+                            <select id="guests" required>
+                                <option value="1">1 Guest</option>
+                                <option value="2" selected>2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5+ Guests</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="package">
+                                <i class="fas fa-gift"></i> Package
+                            </label>
+                            <select id="package" required>
+                                <option value="room">Room Only</option>
+                                <option value="game-drive">Room + Game Drive</option>
+                                <option value="full">Full Experience Package</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="cta-button">
+                            <i class="fas fa-check-circle"></i>
+                            Check Availability & Book Now
+                        </button>
+
+                        <p class="form-note">
+                            <i class="fas fa-lock"></i> Secure booking • No payment required now
+                        </p>
+                    </form>
+
+                    <div class="recent-review">
+                        <div class="stars">★★★★★</div>
+                        <p>"Absolutely stunning views and exceptional service!"</p>
+                        <span>- Sarah M., UK • 2 days ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Key Highlights -->
+    <section class="highlights">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>40 Elegant Rooms</h3>
+                    <p>Deluxe rooms, suites, and family accommodations with modern amenities</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-binoculars"></i>
+                    </div>
+                    <h3>Amboseli Game Drives</h3>
+                    <p>Witness elephants against Kilimanjaro's backdrop in Africa's premier park</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Swimming Pool & Spa</h3>
+                    <p>Relax in our infinity pool or indulge in rejuvenating spa treatments</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-drum"></i>
+                    </div>
+                    <h3>Traditional African Charm</h3>
+                    <p>Experience authentic Maasai culture and warm Kenyan hospitality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Showcase -->
+    <section class="accommodation" id="rooms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Perfect Stay</h2>
+                <p>Each room designed for comfort with stunning views of Mount Kilimanjaro</p>
+            </div>
+
+            <div class="room-filters">
+                <button class="filter-btn active" data-filter="all">All Rooms</button>
+                <button class="filter-btn" data-filter="deluxe">Deluxe</button>
+                <button class="filter-btn" data-filter="suite">Suites</button>
+                <button class="filter-btn" data-filter="family">Family</button>
+            </div>
+
+            <div class="rooms-grid">
+                <div class="room-card" data-category="deluxe">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80" alt="Deluxe Room">
+                        <div class="room-badge">Most Popular</div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Deluxe Room</h3>
+                            <div class="room-price">
+                                <span class="from">From</span>
+                                <span class="price">$120</span>
+                                <span class="per">/ night</span>
+                            </div>
+                        </div>
+                        <ul class="room-features">
+                            <li><i class="fas fa-check"></i> King Size Bed</li>
+                            <li><i class="fas fa-check"></i> Air Conditioning</li>
+                            <li><i class="fas fa-check"></i> Free Wi-Fi</li>
+                            <li><i class="fas fa-check"></i> Flat-screen TV</li>
+                            <li><i class="fas fa-check"></i> Mountain Views</li>
+                        </ul>
+                        <button class="room-cta">Book This Room</button>
+                    </div>
+                </div>
+
+                <div class="room-card" data-category="suite">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80" alt="Executive Suite">
+                        <div class="room-badge luxury">Luxury</div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Executive Suite</h3>
+                            <div class="room-price">
+                                <span class="from">From</span>
+                                <span class="price">$180</span>
+                                <span class="per">/ night</span>
+                            </div>
+                        </div>
+                        <ul class="room-features">
+                            <li><i class="fas fa-check"></i> Separate Living Area</li>
+                            <li><i class="fas fa-check"></i> Premium Bedding</li>
+                            <li><i class="fas fa-check"></i> Balcony with View</li>
+                            <li><i class="fas fa-check"></i> Mini Bar</li>
+                            <li><i class="fas fa-check"></i> Luxury Bathroom</li>
+                        </ul>
+                        <button class="room-cta">Book This Room</button>
+                    </div>
+                </div>
+
+                <div class="room-card" data-category="family">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&q=80" alt="Family Room">
+                    </div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Family Room</h3>
+                            <div class="room-price">
+                                <span class="from">From</span>
+                                <span class="price">$200</span>
+                                <span class="per">/ night</span>
+                            </div>
+                        </div>
+                        <ul class="room-features">
+                            <li><i class="fas fa-check"></i> Sleeps up to 5</li>
+                            <li><i class="fas fa-check"></i> Two Bedrooms</li>
+                            <li><i class="fas fa-check"></i> Family Amenities</li>
+                            <li><i class="fas fa-check"></i> Extra Space</li>
+                            <li><i class="fas fa-check"></i> Connecting Rooms</li>
+                        </ul>
+                        <button class="room-cta">Book This Room</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Penuel Experience -->
+    <section class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Penuel Experience</h2>
+                <p>More than just a stay - it's an unforgettable African adventure</p>
+            </div>
+
+            <div class="experience-content">
+                <div class="experience-section">
+                    <h3><i class="fas fa-hiking"></i> Activities & Adventures</h3>
+                    <div class="activity-grid">
+                        <div class="activity-card">
+                            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&q=80" alt="Game Drive">
+                            <div class="activity-overlay">
+                                <h4>Amboseli Game Drives</h4>
+                                <p>Witness majestic elephants with Kilimanjaro as your backdrop</p>
+                            </div>
+                        </div>
+                        <div class="activity-card">
+                            <img src="https://images.unsplash.com/photo-1580981842149-d0ae7ffc77c8?w=600&q=80" alt="Maasai Culture">
+                            <div class="activity-overlay">
+                                <h4>Maasai Cultural Visits</h4>
+                                <p>Experience authentic traditions with local communities</p>
+                            </div>
+                        </div>
+                        <div class="activity-card">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Sundowners">
+                            <div class="activity-overlay">
+                                <h4>Sundowner Cocktails</h4>
+                                <p>Sip drinks as the sun sets over the African savanna</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="facilities-section">
+                    <h3><i class="fas fa-concierge-bell"></i> World-Class Facilities</h3>
+                    <div class="facilities-grid">
+                        <div class="facility-item">
+                            <i class="fas fa-utensils"></i>
+                            <h4>Restaurant</h4>
+                            <p>International and authentic Kenyan cuisine with Kilimanjaro views</p>
+                        </div>
+                        <div class="facility-item">
+                            <i class="fas fa-cocktail"></i>
+                            <h4>Bar & Lounge</h4>
+                            <p>Signature cocktails and premium spirits in a relaxed setting</p>
+                        </div>
+                        <div class="facility-item">
+                            <i class="fas fa-spa"></i>
+                            <h4>Spa & Wellness</h4>
+                            <p>Rejuvenating treatments, sauna, and state-of-the-art fitness center</p>
+                        </div>
+                        <div class="facility-item">
+                            <i class="fas fa-building"></i>
+                            <h4>Conference Facilities</h4>
+                            <p>Professional meeting spaces for up to 50 delegates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfect For Section -->
+    <section class="perfect-for">
+        <div class="container">
+            <h2>Perfect For</h2>
+            <div class="perfect-grid">
+                <div class="perfect-card">
+                    <i class="fas fa-heart"></i>
+                    <h4>Honeymoons</h4>
+                </div>
+                <div class="perfect-card">
+                    <i class="fas fa-camera"></i>
+                    <h4>Photographers</h4>
+                </div>
+                <div class="perfect-card">
+                    <i class="fas fa-users"></i>
+                    <h4>Families</h4>
+                </div>
+                <div class="perfect-card">
+                    <i class="fas fa-binoculars"></i>
+                    <h4>Safari Beginners</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Location</h2>
+                <p>Perfectly positioned for adventure in the heart of Amboseli</p>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Amboseli National Park</h4>
+                            <p>5 km from park entrance</p>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-plane"></i>
+                        <div>
+                            <h4>Amboseli Airstrip</h4>
+                            <p>15 minutes drive</p>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-city"></i>
+                        <div>
+                            <h4>Nairobi</h4>
+                            <p>4 hours scenic drive</p>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-mountain"></i>
+                        <div>
+                            <h4>Mount Kilimanjaro</h4>
+                            <p>Spectacular views from property</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15956.234!2d37.5370391!3d-2.8009509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x183a113c15c8663d%3A0xe036498b0e1aa77b!2sPenuel%20Plaza%20Hotel!5e0!3m2!1sen!2ske!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <p>A glimpse into your Amboseli experience</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=800&q=80" alt="Hotel exterior">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=800&q=80" alt="Pool area">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Bedroom">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80" alt="Elephants">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>PENUEL PLAZA HOTEL</h3>
+                    <p>Amboseli's finest retreat offering luxury, adventure, and authentic African hospitality.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/penuelhotel" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Amboseli, Kenya</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+254 123 456 789</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@penuelplaza.com</span>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#rooms">Accommodations</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Penuel Plaza Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254123456789" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Sticky Booking Bar (Mobile) -->
+    <div class="sticky-booking-bar" id="stickyBar">
+        <button class="sticky-book-btn">
+            <i class="fas fa-calendar-check"></i>
+            Book Now - Save 15%
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
